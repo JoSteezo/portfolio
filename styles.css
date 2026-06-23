@@ -1,0 +1,98 @@
+/* start GLOBAL STYLES */
+html {
+    font-size: 18px;
+}
+/* end GLOBAL STYLES */
+
+/*start LAYOUT STYLES*/
+body {
+    display: grid;
+    margin: 0;
+}
+
+body header,
+body footer,
+main > * {
+    padding: 0.5rem 1rem;
+}
+
+#mainNav {
+    background-color: lightgray;
+    font-size: 0.875rem;
+}
+
+#mainNav nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#mainNav nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+#mainNav nav ul li {
+    display: inline-block;
+}
+
+#aboutSection {
+    background-color: lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#projectSection {
+    background-color: lightcoral;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projectSection .introText {
+    flex-grow: 100%;
+}
+
+#contactSection {
+    background-color: lightcyan;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#mainFooter {
+    background-color: lightgrey;
+    font-size: 0.875rem;
+}
+/*end LAYOUT STYLES*/
+
+/*start INDEX STYLES*/
+#josteezoPhoto {
+    background-color: red;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+#projectList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;    
+}
+
+.projectCard {
+    background-color: blue;
+    display: inline-block;
+    flex-basis: 10rem;
+    padding: 1rem;
+}
+/*end INDEX STYLES*/

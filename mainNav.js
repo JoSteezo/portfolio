@@ -1,6 +1,7 @@
 const navContainer = document.getElementById('mainNav');
 const navHTML = 
     `<nav>
+        <a href="/index.html">JoSteezo</a>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
