@@ -1,6 +1,6 @@
 /* start GLOBAL STYLES */
 html {
-    font-size: 18px;
+    font-size: 24px;
 }
 /* end GLOBAL STYLES */
 
@@ -38,6 +38,15 @@ main > * {
 #mainNav nav ul li {
     display: inline-block;
 }
+/*end LAYOUT STYLES*/
+
+/*start INDEX STYLES*/
+#aboutSection,
+#projectSection,
+#contactSection {
+    padding-bottom: 1rem;
+
+}
 
 #aboutSection {
     background-color: lightblue;
@@ -49,13 +58,19 @@ main > * {
 
 #projectSection {
     background-color: lightcoral;
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    align-content: center;
 }
 
 #projectSection .introText {
-    flex-grow: 100%;
+    /* flex-grow: 100%; */
+}
+
+#projectList {
+    width: 100%;
+    max-width: 1000px;
 }
 
 #contactSection {
@@ -68,10 +83,9 @@ main > * {
 #mainFooter {
     background-color: lightgrey;
     font-size: 0.875rem;
+    text-align: center;
 }
-/*end LAYOUT STYLES*/
 
-/*start INDEX STYLES*/
 #josteezoPhoto {
     background-color: red;
     height: 10rem;
@@ -91,8 +105,27 @@ main > * {
 
 .projectCard {
     background-color: blue;
+    color: white;
     display: inline-block;
     flex-basis: 10rem;
     padding: 1rem;
 }
 /*end INDEX STYLES*/
+
+/*start CONTACT STYLES*/
+form {
+    max-width: 480px;
+    margin: 0 auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+}
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+}
+.formGroup label {
+    margin-bottom: .125rem;
+}
+/*end CONTACT STYLES*/

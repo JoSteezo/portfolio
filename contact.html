@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JoSteezo | Contact</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script defer src="./mainNav.js"></script>
-    <script defer src="./footer.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="./js/mainNav.js"></script>
+    <script defer src="./js/footer.js"></script>
+    <script defer src="./js/contactForm.js"></script>
 </head>
 <body>
-    
-    <h1>My Cool Ass Wife wuz here</h1>
-    
+    <header id="mainNav"></header>
+    <main>
+        <h1>You Know What to Do</h1>
+        <form>
+            <div class="formGroup">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="formGroup">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="formGroup">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" cols="33" rows="5" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" id="submitButton">Send Message</button>
+            <p id="formStatus"></p>
+        </form>
+    </main>
+    <footer id="mainFooter"></footer>
 </body>
 </html>
